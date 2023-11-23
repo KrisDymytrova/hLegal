@@ -490,7 +490,6 @@ h2 {
 .news_block {
     display: flex;
     gap: 30px;
-    max-width: 1600px;
     width: 100%;
     flex-wrap: wrap;
 }
