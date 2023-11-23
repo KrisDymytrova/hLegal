@@ -40,8 +40,8 @@
                 <nav>
                     <ul class="menu_lang">
                         <li><a href="#" id="language-uk">УК</a></li>
-                        <li><a href="#" id="language-ru">RU</a></li>
-                        <li><a href="#" id="language-en">EN</a></li>
+                        <li><a href="#" id="language-ru">РУ</a></li>
+                        <li class="active"><a href="#" id="language-en">EN</a></li>
                     </ul>
                 </nav>
                 <div class="dot"></div>
@@ -84,7 +84,7 @@
         <h2>
             you legal solutions provider
         </h2>
-        <button>
+        <button id="anchorButton">
             <svg class="scroll_svg" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_22728_11340)">
                     <circle opacity="0.5" cx="21" cy="21" r="20"/>
@@ -93,7 +93,7 @@
             </svg>
         </button>
     </div>
-    <section class="info container">
+    <section id="anchorScrollTo" class="info container">
         <div class="info_first">
             <h2 class="highlight">Consistent</h2>
             <h2 class="highlight">Customer oriented</h2>
@@ -189,18 +189,36 @@
     <div class="gradient_3"></div>
 </div>
 <section class="slider block">
-    <div class="slider_item">
-        <div class="slider_image"></div>
-        <div class="slider_info">
-            <a class="link" href="#">Команда
-                <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.5 2L8 6.5L3.5 11"/>
-                </svg>
-            </a>
-            <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
-                ситуаціях, коли більшість безсилі.</h2>
-            <p class="name">Олександр Олександровський</p>
-            <p class="position">Керуючий партнер</p>
+    <div>
+        <div class="slider_item">
+            <div class="slider_image"></div>
+            <div class="slider_info">
+                <a class="link" href="#">Команда
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 2L8 6.5L3.5 11"/>
+                    </svg>
+                </a>
+                <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
+                    ситуаціях, коли більшість безсилі.</h2>
+                <p class="name">Олександр Олександровський</p>
+                <p class="position">Керуючий партнер</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="slider_item">
+            <div class="slider_image"></div>
+            <div class="slider_info">
+                <a class="link" href="#">Команда
+                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 2L8 6.5L3.5 11"/>
+                    </svg>
+                </a>
+                <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
+                    ситуаціях, коли більшість безсилі.</h2>
+                <p class="name">Олександр Олександровський</p>
+                <p class="position">Керуючий партнер</p>
+            </div>
         </div>
     </div>
 </section>
@@ -247,71 +265,98 @@
         </div>
     </div>
 </section>
-<section class="news container">
-    <a class="link" href="#">Publications
-        <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.5 2L8 6.5L3.5 11"/>
-        </svg>
-    </a>
-    <h2>
-        We have something to tell
-    </h2>
-    <div class="news_block">
-        <article class="news_block_item">
-            <img src="images/Equity.jpg" alt="">
-            <div class="text_block">
-                <h4><a class="article_title" href="#">Equity associate</a></h4>
-                <p class="news_date">April 22</p>
-                <p class="news_text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before
-                    entering my parents told me that if I…</p>
-            </div>
-        </article>
-        <article class="news_block_item">
-            <img src="images/Penalty.jpg" alt="">
-            <div class="text_block">
-                <h4><a class="article_title" href="#">Penalty for the Good Corporation: what will happen to Google and
-                    others for violating
-                    the GDPR</a></h4>
-                <p class="news_date">September 29</p>
-                <p class="news_text">And why the recovery of 50 million euros could be a fateful precedent According to
-                    Mind.ua January 21 National Commission for Data Protection.</p>
-            </div>
-        </article>
-        <article class="news_block_item">
-            <img src="images/Millennial.jpg" alt="">
-            <div class="text_block">
-                <h4><a class="article_title" href="#">Millennial Testament</a></h4>
-                <p class="news_date">August 19</p>
-                <p class="news_text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit
-                    A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-            </div>
-        </article>
-    </div>
-</section>
-<footer class="container">
-    <div class="footer_info">
-        <div class="footer_address_block">
-            <p class="footer_address">Kyiv, Mechnikova str, 14/1</p>
-            <div class="dot"></div>
-            <a href="#">On map</a>
-        </div>
-        <div class="footer_copyright">
-            <p>© 2021 HLEGAL Law company, LLC</p>
-        </div>
-    </div>
-    <div class="footer_socials">
-        <a class="footer_facebook_logo" href="https://facebook.com/">
-            <svg class="footer_facebook_svg" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_123133_1645)">
-                    <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
-                </g>
+<section class="news">
+    <div class="container news_content">
+        <a class="link" href="#">Publications
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 2L8 6.5L3.5 11"/>
             </svg>
         </a>
-        <div class="dot"></div>
-        <a class="footer_phone" href="tel:0800211927">0800 211 927</a>
-        <div class="dot"></div>
-        <a class="footer_email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+        <h2>
+            We have something to tell
+        </h2>
+        <div class="news_block">
+            <article class="news_block_item">
+                <div class="news-img-1"></div>
+                <div class="text_block">
+                    <h4><a class="article_title" href="#">Equity associate</a></h4>
+                    <p class="news_date">April 22</p>
+                    <p class="news_text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before
+                        entering my parents told me that if I…</p>
+                </div>
+            </article>
+            <article class="news_block_item">
+                <div class="news-img-2"></div>
+                <div class="text_block">
+                    <h4><a class="article_title" href="#">Penalty for the Good Corporation: what will happen to Google and
+                        others for violating
+                        the GDPR</a></h4>
+                    <p class="news_date">September 29</p>
+                    <p class="news_text">And why the recovery of 50 million euros could be a fateful precedent According to
+                        Mind.ua January 21 National Commission for Data Protection.</p>
+                </div>
+            </article>
+            <article class="news_block_item">
+                <div class="news-img-3"></div>
+                <div class="text_block">
+                    <h4><a class="article_title" href="#">Millennial Testament</a></h4>
+                    <p class="news_date">August 19</p>
+                    <p class="news_text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit
+                        A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container footer_content">
+        <div class="footer_info">
+            <div class="footer_address_block">
+                <p class="footer_address">Kyiv, Mechnikova str, 14/1</p>
+                <div class="dot"></div>
+                <a href="#">On map</a>
+            </div>
+            <div class="footer_copyright">
+                <p>© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+        <div class="footer_socials">
+            <a class="footer_facebook_logo" href="https://facebook.com/">
+                <svg class="footer_facebook_svg" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_123133_1645)">
+                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                    </g>
+                </svg>
+            </a>
+            <div class="dot"></div>
+            <a class="footer_phone" href="tel:0800211927">0800 211 927</a>
+            <div class="dot"></div>
+            <a class="footer_email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+        </div>
     </div>
 </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $("#anchorButton").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#anchorScrollTo").offset().top
+        }, 1000);
+    });
+
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: true,
+        });
+    });
+</script>
+
 </body>
 </html>

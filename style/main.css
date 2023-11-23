@@ -59,8 +59,8 @@ a {
 
 .header_menu_info {
     gap: 6px;
-    padding-bottom: 16px;
-    height: 25px;
+    margin-bottom: 16px;
+    height: 24px;
 }
 
 .menu_lang, .phone, .header_nav_list, h2 {
@@ -85,7 +85,7 @@ a {
     background: rgba(255, 255, 255, 0.20);
 }
 
-.menu_lang li:active {
+.menu_lang li:active, .menu_lang li.active {
     border-radius: 8px;
     background: #F0145A;
 }
@@ -116,7 +116,7 @@ a {
 
 .header_nav_list a:hover {
     border-bottom: 2px solid #F0145A;
-    margin-bottom: 3px;
+    padding-bottom: 3px;
 }
 
 h2 {
@@ -323,7 +323,14 @@ h2 {
 
 .slider {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+}
+
+.slide {
+    display: flex;
+    background: #EDEDF7;
+    border-radius: 12px;
+    height: 298px;
 }
 
 .slider_item {
@@ -331,11 +338,12 @@ h2 {
     background: #EDEDF7;
     border-radius: 12px;
     height: 298px;
+    width: calc(100% + 2px);
+    padding: 0 1px;
 }
 
 .slider_image {
     width: 400px;
-    height: 298px;
     background: url('../images/image.jpg') no-repeat;
     background-size: cover;
 }
@@ -350,6 +358,22 @@ h2 {
     padding-top: 5px;
     padding-bottom: 30px;
     line-height: normal;
+}
+
+.slick-dots li button:before {
+    font-size:0;
+}
+
+.slick-dots li {
+    width: 16px;
+    height: 16px;
+    background-color: #24A3FF;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.slick-dots .slick-active {
+    opacity: 1;
 }
 
 .name {
@@ -468,6 +492,7 @@ h2 {
     gap: 30px;
     max-width: 1600px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .news_block_item {
@@ -479,11 +504,22 @@ h2 {
     border-radius: 8px;
     overflow: hidden;
     background-color: #FFFFFF;
+    min-width: 300px;
 }
 
-.news_block_item img {
+.news_block_item .news-img-1, .news_block_item .news-img-2, .news_block_item .news-img-3 {
     height: 200px;
-    width: auto;
+    width: 100%;
+    background-size: cover;
+}
+.news-img-1 {
+    background: url('../images/Equity.jpg') no-repeat center;
+}
+.news-img-2 {
+    background: url('../images/Penalty.jpg') no-repeat center;
+}
+.news-img-3 {
+    background: url('../images/Millennial.jpg') no-repeat center;
 }
 
 .text_block {
@@ -542,6 +578,10 @@ footer::before {
     background: #E6E6F0;
     align-self: stretch;
     margin-bottom: 30px;
+}
+
+.footer_content, .news_content {
+    width: 100%;
 }
 
 .footer_info {
