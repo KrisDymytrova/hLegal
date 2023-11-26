@@ -1304,13 +1304,21 @@ padding-left: 30px;
 padding-right: 30px;
 }
 
-    .logo_blok img {
+.logo_block {
+    padding-left: 15px;
+}
+
+    .logo_block img {
         height: 32px;
         width: 69px;
     }
 
     .logo_block p {
         font-size: 20px;
+    }
+
+    .services_main_block {
+        padding-top: 132px;
     }
 
 .services_main_block h2, .news h2 {
