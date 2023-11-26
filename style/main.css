@@ -201,7 +201,7 @@ h2 {
     padding: 0;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: transparent;
 }
 
@@ -209,7 +209,7 @@ h2 {
     color: #F0145A;
 }
 
-.nav-link.active{
+.nav-link.active {
     background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -409,7 +409,7 @@ h2 {
 }
 
 .slick-dots li button:before {
-    font-size:0;
+    font-size: 0;
 }
 
 .slick-dots li {
@@ -559,12 +559,15 @@ h2 {
     width: 100%;
     background-size: cover;
 }
+
 .news-img-1 {
     background: url('../images/Equity.jpg') no-repeat center;
 }
+
 .news-img-2 {
     background: url('../images/Penalty.jpg') no-repeat center;
 }
+
 .news-img-3 {
     background: url('../images/Millennial.jpg') no-repeat center;
 }
@@ -794,6 +797,7 @@ label {
     background-color: #E6E6F0;
     border-radius: 8px;
 }
+
 .popup_close_button {
     background-color: transparent;
     border: 0;
@@ -946,8 +950,42 @@ label {
     color: #F0145A;
 }
 
+.header_mobile_menu_block {
+    display: none;
+}
 
+.header_mobile_menu_block button {
+    background: transparent;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
 
+#menu-modal {
+    color: red;
+}
+
+.animate-bottom-menu {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    animation: animatebottom 0.4s;
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
 
 @media (max-width: 1440px) {
 
@@ -1087,6 +1125,7 @@ label {
         content: '';
         display: none;
     }
+
     .info .info_second::before {
         content: '';
         width: calc(100% - 60px * 2);
@@ -1153,7 +1192,6 @@ label {
 }
 
 
-
 @media (max-width: 375px) {
 
     .dot {
@@ -1196,6 +1234,17 @@ label {
         justify-content: center;
     }
 
+    .main_logo {
+        position: static;
+    }
+
+    .header_menu_block {
+        display: none;
+    }
+
+    .header_mobile_menu_block {
+        display: block;
+    }
 
 }
 
