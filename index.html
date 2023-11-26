@@ -11,12 +11,15 @@
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="HLegal"/>
     <meta property="og:description" content="Website for a law company"/>
-    <meta property="og:image" content="images/kristian-angelo-ogg.jpg"/>
+    <meta property="og:image" content="images/Image-ogg.png"/>
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/ico" href="images/Favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style/reset.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -27,12 +30,12 @@
     <link rel="stylesheet" href="style/main.css">
 
 
-    <title>HLegal</title>
+    <title>Main Page</title>
 </head>
 <body>
 <header>
     <div class="block header_menu">
-        <a href="index.html">
+        <a class="main_logo" href="index.html">
             <img src="images/Logo.svg" alt="law company site logo">
         </a>
         <div class="header_menu_block">
@@ -78,12 +81,62 @@
             </nav>
         </div>
     </div>
+    <!--    <nav class="navbar block header_menu">-->
+    <!--        <a class="navbar-brand main_logo" href="index.html">-->
+    <!--            <img src="images/Logo.svg" alt="law company site logo">-->
+    <!--        </a>-->
+    <!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--            <span class="navbar-toggler-icon"></span>-->
+    <!--        </button>-->
+    <!--        <div class="collapse navbar-collapse header_menu_block" id="navbarSupportedContent">-->
+    <!--            <div class="navbar-nav header_menu_info">-->
+    <!--                <nav>-->
+    <!--                    <ul class="menu_lang">-->
+    <!--                        <li><a href="#" id="language-uk">УК</a></li>-->
+    <!--                        <li><a href="#" id="language-ru">РУ</a></li>-->
+    <!--                        <li class="active"><a href="#" id="language-en">EN</a></li>-->
+    <!--                    </ul>-->
+    <!--                </nav>-->
+    <!--                <div class="dot"></div>-->
+    <!--                <p class="address">Kyiv, Mechnikova str, 14/1</p>-->
+    <!--                <div class="dot"></div>-->
+    <!--                <a class="phone" href="tel:0800211927">0800 211 927</a>-->
+    <!--                <div class="dot"></div>-->
+    <!--                <a class="facebook_header" href="https://facebook.com/">-->
+    <!--                    <svg class="facebook_svg" xmlns="http://www.w3.org/2000/svg">-->
+    <!--                        <g clip-path="url(#clip0_123133_740)">-->
+    <!--                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"/>-->
+    <!--                        </g>-->
+    <!--                    </svg>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--            <nav class="dropdown-menu header_nav" role="navigation" aria-labelledby="navbarDropdown">-->
+    <!--                <ul class="header_nav_list">-->
+    <!--                    <li class="dropdown-item">-->
+    <!--                        <a href="#">about us</a>-->
+    <!--                    </li>-->
+    <!--                    <li class="dropdown-item">-->
+    <!--                        <a href="#">services</a>-->
+    <!--                    </li>-->
+    <!--                    <li class="dropdown-item">-->
+    <!--                        <a href="#">team</a>-->
+    <!--                    </li>-->
+    <!--                    <li class="dropdown-item">-->
+    <!--                        <a href="#">publications</a>-->
+    <!--                    </li>-->
+    <!--                    <li class="dropdown-item">-->
+    <!--                        <a href="#">contact</a>-->
+    <!--                    </li>-->
+    <!--                </ul>-->
+    <!--            </nav>-->
+    <!--        </div>-->
+    <!--    </nav>-->
 </header>
 <section class="gradient">
     <div class="top_block container">
-        <h2>
+        <h1>
             you legal solutions provider
-        </h2>
+        </h1>
         <button id="anchorButton">
             <svg class="scroll_svg" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_22728_11340)">
@@ -93,25 +146,76 @@
             </svg>
         </button>
     </div>
-    <section id="anchorScrollTo" class="info container">
-        <div class="info_first">
-            <h2 class="highlight">Consistent</h2>
-            <h2 class="highlight">Customer oriented</h2>
-            <h2 class="highlight">Innovative</h2>
-            <h2 class="highlight">Business oriented</h2>
+    <section id="anchorScrollTo">
+        <div class="info container">
+            <div class="info_first nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-сonsistent-tab" data-bs-toggle="pill"
+                   data-bs-target="#v-pills-сonsistent" role="tab" aria-controls="v-pills-сonsistent"
+                   aria-selected="true">Consistent</a>
+                <a class="nav-link" id="v-pills-сustomer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-сustomer"
+                   role="tab" aria-controls="v-pills-сustomer" aria-selected="false">Customer oriented</a>
+                <a class="nav-link" id="v-pills-innovative-tab" data-bs-toggle="pill"
+                   data-bs-target="#v-pills-innovative" role="tab" aria-controls="v-pills-innovative"
+                   aria-selected="false">Innovative</a>
+                <a class="nav-link" id="v-pills-business-tab" data-bs-toggle="pill" data-bs-target="#v-pills-business"
+                   role="tab" aria-controls="v-pills-business" aria-selected="false">Business oriented</a>
+            </div>
+            <div class="info_second tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-сonsistent" role="tabpanel"
+                     aria-labelledby="v-pills-сonsistent-tab">
+                    <h3>
+                        We turn the idea of legal services
+                    </h3>
+                    <p>
+                        Consolidating many years of experience and practice, the company's lawyers accompany complex
+                        projects
+                        and
+                        achieve a number of important decisions for the industry. Many of them form the practice of
+                        applying the
+                        law
+                        of the sea in Ukraine.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-сustomer" role="tabpanel"
+                     aria-labelledby="v-pills-сonsistent-tab">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nobis.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque necessitatibus nihil nobis,
+                        nostrum nulla odio qui sunt? Aspernatur consequatur dolore perspiciatis placeat! Aliquam aperiam
+                        aut autem consequatur cupiditate debitis dolore dolorum error fugiat impedit in, laboriosam,
+                        magnam magni nam, necessitatibus non officia pariatur quisquam quo quos ullam velit veniam
+                        voluptates.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-innovative" role="tabpanel"
+                     aria-labelledby="v-pills-сonsistent-tab">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, tenetur.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloribus ea, et fugit, maiores
+                        molestias nam nihil porro qui quis quisquam reprehenderit? Ab accusamus ad commodi consectetur
+                        earum eos est eveniet expedita explicabo facere fugiat id impedit ipsa libero maiores molestiae
+                        nesciunt nulla officia qui, quod repellat repudiandae vero, voluptates.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-business" role="tabpanel"
+                     aria-labelledby="v-pills-сonsistent-tab">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, laudantium.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid aut consectetur
+                        consequuntur culpa cupiditate doloribus dolorum eaque enim excepturi id incidunt inventore ipsa
+                        itaque iusto laborum libero minima minus natus necessitatibus omnis optio possimus, quam quo
+                        quod saepe sit tempore unde veritatis vero vitae voluptatem voluptates. Doloremque, facere.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="info_second">
-            <h3>
-                We turn the idea of legal services
-            </h3>
-            <p>
-                Consolidating many years of experience and practice, the company's lawyers accompany complex projects
-                and
-                achieve a number of important decisions for the industry. Many of them form the practice of applying the
-                law
-                of the sea in Ukraine.
-            </p>
-        </div>
+
     </section>
     <section class="advantages block">
         <a class="link" href="#">Services
@@ -124,7 +228,7 @@
         </h2>
         <div class="advantages_list">
             <div class="advantages_item">
-                <div class="advantages_img">
+                <div class="advantages_image">
                     <img src="images/Ecommerce.svg" alt="">
                 </div>
                 <h4><a href="#">IT and e-commerce</a></h4>
@@ -133,17 +237,17 @@
                     from doing business. But there is not much work to do to hire an in-house lawyer.</p>
             </div>
             <div class="advantages_item">
-                <div class="advantages_img">
+                <div class="advantages_image">
                     <img src="images/Support.svg" alt="">
                 </div>
-                <h4><a href="#">Comprehensive daily <br> legal support</a></h4>
+                <h4 class="center_advantage"><a href="#">Comprehensive daily legal support</a></h4>
                 <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer.
                     And
                     we know very well how difficult it is to find a good candidate with experience in the field of
                     information technology in Ukraine.</p>
             </div>
             <div class="advantages_item">
-                <div class="advantages_img">
+                <div class="advantages_image">
                     <img src="images/Group.svg" alt="">
                 </div>
                 <h4><a href="#">Structuring corporate relationships</a></h4>
@@ -152,7 +256,7 @@
                     daily life of your company.</p>
             </div>
             <div class="advantages_item">
-                <div class="advantages_img">
+                <div class="advantages_image">
                     <img src="images/Trust.svg" alt="">
                 </div>
                 <h4><a href="#">Building contractual relations</a></h4>
@@ -161,17 +265,17 @@
                     it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
             </div>
             <div class="advantages_item">
-                <div class="advantages_img">
+                <div class="advantages_image">
                     <img src="images/Protection.svg" alt="">
                 </div>
-                <h4><a href="#">Protection of business, intellectual <br> property</a></h4>
+                <h4 class="center_advantage"><a href="#">Protection of business, intellectual property</a></h4>
                 <p>And all the other time he will work on new diverse projects, so he will definitely not stop in
                     professional development. One way or another, all Axon Partners will work for you instead of a
                     corporate
                     lawyer.</p>
             </div>
             <div class="advantages_item">
-                <div class="advantages_img">
+                <div class="advantages_image">
                     <img src="images/Layer.svg" alt="">
                 </div>
                 <h4><a href="#">Judicial representation</a></h4>
@@ -304,11 +408,13 @@
             <article class="news_block_item">
                 <div class="news-img-2"></div>
                 <div class="text_block">
-                    <h4><a class="article_title" href="#">Penalty for the Good Corporation: what will happen to Google and
+                    <h4><a class="article_title" href="#">Penalty for the Good Corporation: what will happen to Google
+                        and
                         others for violating
                         the GDPR</a></h4>
                     <p class="news_date">September 29</p>
-                    <p class="news_text">And why the recovery of 50 million euros could be a fateful precedent According to
+                    <p class="news_text">And why the recovery of 50 million euros could be a fateful precedent According
+                        to
                         Mind.ua January 21 National Commission for Data Protection.</p>
                 </div>
             </article>
@@ -317,7 +423,8 @@
                 <div class="text_block">
                     <h4><a class="article_title" href="#">Millennial Testament</a></h4>
                     <p class="news_date">August 19</p>
-                    <p class="news_text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit
+                    <p class="news_text">What and how modern vloggers, opinion leaders and crypto-millionaires will
+                        inherit
                         A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                 </div>
             </article>
@@ -332,22 +439,22 @@
                 <div class="dot"></div>
                 <a href="#">On map</a>
             </div>
-            <div class="footer_copyright">
-                <p>© 2021 HLEGAL Law company, LLC</p>
+            <div class="footer_socials">
+                <a class="footer_facebook_logo" href="https://facebook.com/">
+                    <svg class="footer_facebook_svg" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_123133_1645)">
+                            <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                        </g>
+                    </svg>
+                </a>
+                <div class="dot"></div>
+                <a class="footer_phone" href="tel:0800211927">0800 211 927</a>
+                <div class="dot"></div>
+                <a class="footer_email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
             </div>
         </div>
-        <div class="footer_socials">
-            <a class="footer_facebook_logo" href="https://facebook.com/">
-                <svg class="footer_facebook_svg" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_123133_1645)">
-                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
-                    </g>
-                </svg>
-            </a>
-            <div class="dot"></div>
-            <a class="footer_phone" href="tel:0800211927">0800 211 927</a>
-            <div class="dot"></div>
-            <a class="footer_email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+        <div class="footer_copyright">
+            <p>© 2021 HLEGAL Law company, LLC</p>
         </div>
     </div>
 </footer>
@@ -356,22 +463,29 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 <script>
     $("#anchorButton").click(function () {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#anchorScrollTo").offset().top
-        }, 1000);
+        }, 300);
     });
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('.slider').slick({
             dots: true,
         });
     });
+
 </script>
 
 </body>
