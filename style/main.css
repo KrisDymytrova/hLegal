@@ -5,7 +5,7 @@ body {
 
 .gradient {
     border-radius: 0 0 12px 12px;
-    background: var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
 .dot {
@@ -224,8 +224,8 @@ h2 {
 }
 
 .nav-link.active {
-    background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
-    background-clip: text;
+    background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -295,7 +295,7 @@ h2 {
 
 .advantages h2, .slider_info h2, .news h2, .services_main_block h2 {
     background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 37%);
-    background-clip: text;
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -726,7 +726,7 @@ footer::before {
     max-width: 359px;
     width: 100%;
     border-radius: 12px 12px 0 0;
-    background: var(--basic-white, #FFF);
+    background: #FFF;
 }
 
 .logo_block {
